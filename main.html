@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            background-image: url('SWB_Background.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            position: relative; /* Allows for absolute positioning of the logout button */
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 0;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header div {
+            padding: 10px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 0;
+            margin-top: 10px;
+        }
+        .content div {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border: 1px solid white;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button class="logout" onclick="location.href='/logout'">Logout</button>
+    
+    <div class="container">
+        <div class="header">
+            <div>Duty</div>
+            <div>Time</div>
+            <div>Trains</div>
+            <div>License</div>
+        </div>
+
+        <div class="content">
+            <!-- Duties -->
+            <div>Duty 37</div>
+            <div>00:00 - 03:00</div>
+            <div>RB1 + ICE</div>
+            <div>429, 412</div>
+
+            <div>Duty 2</div>
+            <div>00:33 - 05:23</div>
+            <div>RB1</div>
+            <div>429, 146</div>
+
+            <div>Duty 3</div>
+            <div>00:34 - 06:00</div>
+            <div>RB2 + ICE</div>
+            <div>623, 412</div>
+
+            <div>Duty 38</div>
+            <div>01:00 - 04:00</div>
+            <div>RE1</div>
+            <div>429, 146</div>
+
+            <div>Duty 39</div>
+            <div>02:00 - 05:00</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 40</div>
+            <div>03:00 - 06:00</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 41</div>
+            <div>04:00 - 07:00</div>
+            <div>RB1 + ICE</div>
+            <div>429, 412</div>
+
+            <div>Duty 5</div>
+            <div>04:30 - 06:55</div>
+            <div>RB1/2</div>
+            <div>623, 146</div>
+
+            <div>Duty 42</div>
+            <div>05:00 - 08:00</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 10</div>
+            <div>05:05 - 07:45</div>
+            <div>RB2</div>
+            <div>623, 412</div>
+
+            <div>Duty 06</div>
+            <div>05:10 - 08:00</div>
+            <div>RE1 + ICE</div>
+            <div>146, 412</div>
+
+            <div>Duty 1</div>
+            <div>05:33 - 08:07</div>
+            <div>RB1</div>
+            <div>429, 623</div>
+
+            <div>Duty 15</div>
+            <div>05:55 - 08:28</div>
+            <div>RB1/2</div>
+            <div>429, 623</div>
+
+            <div>Duty 11</div>
+            <div>05:58 - 07:58</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 43</div>
+            <div>06:00 - 09:00</div>
+            <div>RE1</div>
+            <div>429, 146</div>
+
+            <div>Duty 8</div>
+            <div>06:10 - 09:55</div>
+            <div>ICE</div>
+            <div>146, 412</div>
+
+            <div>Duty 9</div>
+            <div>06:20 - 08:58</div>
+            <div>ICE + RB2</div>
+            <div>623, 412</div>
+
+            <div>Duty 7</div>
+            <div>06:35 - 09:06</div>
+            <div>RE1</div>
+            <div>146</div>
+
+            <div>Duty 12</div>
+            <div>06:45 - 09:00</div>
+            <div>RB1/2 + ICE</div>
+            <div>623, 429, 412</div>
+
+            <div>Duty 44</div>
+            <div>07:00 - 10:00</div>
+            <div>RB1 + ICE</div>
+            <div>429, 412</div>
+
+            <div>Duty 13</div>
+            <div>07:02 - 09:36</div>
+            <div>RE</div>
+            <div>429, 146</div>
+
+            <div>Duty 16</div>
+            <div>07:03 - 08:58</div>
+            <div>RB1</div>
+            <div>146</div>
+
+            <div>Duty 45</div>
+            <div>08:00 - 11:00</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 19</div>
+            <div>08:03 - 10:25</div>
+            <div>RB1</div>
+            <div>429</div>
+
+            <div>Duty 17</div>
+            <div>08:34 - 10:53</div>
+            <div>RB2 + ICE</div>
+            <div>623, 429</div>
+
+            <div>Duty 20</div>
+            <div>08:45 - 12:00</div>
+            <div>ICE + RB2</div>
+            <div>623, 412</div>
+
+            <div>Duty 46</div>
+            <div>09:00 - 12:00</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 18</div>
+            <div>09:05 - 11:58</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 21</div>
+            <div>09:15 - 11:58</div>
+            <div>RE1</div>
+            <div>429, 146</div>
+
+            <div>Duty 14</div>
+            <div>09:22 - 12:00</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 22</div>
+            <div>10:00 - 12:30</div>
+            <div>RB1</div>
+            <div>429</div>
+
+            <div>Duty 47</div>
+            <div>10:00 - 13:00</div>
+            <div>RB1</div>
+            <div>429</div>
+
+            <div>Duty 23</div>
+            <div>10:35 - 13:30</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 48</div>
+            <div>11:00 - 14:00</div>
+            <div>RB2 + ICE</div>
+            <div>623, 412</div>
+
+            <div>Duty 24</div>
+            <div>12:00 - 14:30</div>
+            <div>RB2/1</div>
+            <div>623, 429</div>
+
+            <div>Duty 49</div>
+            <div>12:00 - 15:00</div>
+            <div>RE1</div>
+            <div>429, 146</div>
+
+            <div>Duty 50</div>
+            <div>13:00 - 16:00</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 25</div>
+            <div>13:00 - 16:30</div>
+            <div>RB1 + ICE</div>
+            <div>429, 412</div>
+
+            <div>Duty 51</div>
+            <div>14:00 - 17:00</div>
+            <div>RB1/2</div>
+            <div>429, 623</div>
+
+            <div>Duty 26</div>
+            <div>14:00 - 17:30</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 27</div>
+            <div>15:00 - 17:50</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 52</div>
+            <div>15:00 - 18:00</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 53</div>
+            <div>16:00 - 19:00</div>
+            <div>ICE + RB1</div>
+            <div>412, 429</div>
+
+            <div>Duty 28</div>
+            <div>16:00 - 19:20</div>
+            <div>RB1</div>
+            <div>429</div>
+
+            <div>Duty 29</div>
+            <div>16:45 - 19:45</div>
+            <div>RB2 + ICE</div>
+            <div>623, 412</div>
+
+            <div>Duty 30</div>
+            <div>18:00 - 20:00</div>
+            <div>RB1</div>
+            <div>429</div>
+
+            <div>Duty 31</div>
+            <div>19:00 - 22:30</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 32</div>
+            <div>19:30 - 22:00</div>
+            <div>RB2/1</div>
+            <div>623, 429</div>
+
+            <div>Duty 33</div>
+            <div>20:00 - 23:30</div>
+            <div>RB2</div>
+            <div>623</div>
+
+            <div>Duty 34</div>
+            <div>21:00 - 23:30</div>
+            <div>RB1 + ICE</div>
+            <div>429, 412</div>
+
+            <div>Duty 35</div>
+            <div>22:00 - 23:59</div>
+            <div>ICE</div>
+            <div>412</div>
+
+            <div>Duty 36</div>
+            <div>23:00 - 00:30</div>
+            <div>RB2</div>
+            <div>623</div>
+        </div>
+
+        <div class="footer">
+            <p>Website: wiktor007polska</p>
+            <p>Dutylist: Bram (BR423)</p>
+            <p>Version: 2.03</p>
+            <p>Last Updated: 31.08.2024</p>
+        </div>
+    </div>
+</body>
+</html>

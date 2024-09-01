@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="color.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Südwestbahn Login</title>
+  <style>
+    body {
+      background: url('SWB_Background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #000000b3; /* Slightly transparent background */
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      width: 400px; /* Adjusted width for more space */
+    }
+    img {
+      width: 120px; /* Adjust size as needed */
+      margin: 20px auto;
+      display: block;
+    }
+    input {
+      width: calc(100% - 20px);
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      width: calc(100% - 20px);
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .footer-info {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Südwestbahn</h1>
+    <img src="SWB_Logo_Rot.png" alt="SWB_Logo">
+    <h2>Login</h2>
+    <!-- Update: Form to POST data -->
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Removed error display -->
+
+    <div class="footer-info">
+      <p>Website: wiktor007polska</p>
+      <p>Dutylist: Bram (BR423)</p>
+      <p>Version: 2.03</p>
+      <p>Last Updated: 31.08.2024</p>
+    </div>
+  </div>
+</body>
+</html>
