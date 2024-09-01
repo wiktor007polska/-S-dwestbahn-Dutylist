@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, url_for, session, render_template, flash
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'  # Replace with a strong, random secret key
+app.secret_key = '742345123441'  # Replace with a strong, random secret key
 
 # Dummy user credentials
 User_Password = [
