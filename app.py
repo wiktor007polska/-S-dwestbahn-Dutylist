@@ -5,7 +5,7 @@ app.secret_key = 'your_secret_key_here'  # Replace with a strong, random secret 
 
 # Dummy user credentials
 User_Password = [
-    ("Rakete", "1234"),
+    ("Guest", "1234"),
     ("wiktor007polska", "SWB123"),
     ("Staff", "ILSWB2.6"),
     ("Finnisthebestname", "Calibra.01")
